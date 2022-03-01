@@ -16,6 +16,7 @@ def preprocessing():
     # Reading all the files and appending on data frame
     for i in range(len(Data)):
         sub_data = pd.read_csv('E:/project_data/{}'.format((Data[i])))
+        # store sub data
         df = df.append(sub_data)
 
     # adding no. of blocks according to label
